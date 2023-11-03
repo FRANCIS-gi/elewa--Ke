@@ -1,14 +1,17 @@
-*{
+/* Reset styles for all elements */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root{
+/* Define custom CSS variables */
+:root {
   --elewa-group-website-color-primary: #000000;
   --elewa-group-website-color-white: #ffffff;
 }
 
+/* Styles for <h4> headings */
 h4 {
   display: block;
   margin-block-start: 1.33em;
@@ -18,6 +21,7 @@ h4 {
   font-weight: bold;
 }
 
+/* Styles for paragraphs (<p>) */
 p {
   display: block;
   margin-block-start: 1em;
@@ -26,28 +30,35 @@ p {
   margin-inline-end: 0px;
 }
 
+/* Styles for links (<a>) */
 a {
   text-decoration: none; /* Remove underlines from links */
 }
 
-div{
+/* Styles for <div> elements */
+div {
   display: block;
 }
+
+/* Styles for the root container of the application */
 .App {
   text-align: center;
 }
 
+/* Styles for the logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation for the logo spin */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Styles for the header section */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -59,10 +70,12 @@ div{
   color: white;
 }
 
+/* Styles for links within the header */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes animation for spinning the logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -72,28 +85,32 @@ div{
   }
 }
 
+/* Footer styles and sub-elements */
 .footer-label, .footer-label h4, .footer-text-wrapper, p, a, .contact, .navigation, .terms, .brands {
- color: var(--elewa-group-website-color-white);
- margin-left: 0;
+  color: var(--elewa-group-website-color-white);
+  margin-left: 0;
 }
 
-.footer{
+/* Styles for the footer container */
+.footer {
   background-color: var(--elewa-group-website-color-primary);
   padding-inline: 0.5rem;
   padding-top: 3rem;
   max-width: 100%;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
-  color: var(--elewa-group-website-color-white);  
+  color: var(--elewa-group-website-color-white);
   text-decoration-color: var(--elewa-group-website-color-white);
 }
 
-.footer-navigations{
+/* Styles for the footer navigations section */
+.footer-navigations {
   margin-inline: 4rem;
   margin-top: 4rem;
   border-top: 1px solid var(--elewa-group-website-color-white);
 }
 
+/* Styles for the footer label container */
 .footer-label {
   display: flex;
   justify-content: space-between;
@@ -101,6 +118,7 @@ div{
   padding: 1.5rem 1rem;
 }
 
+/* Styles for footer text and <h4> headings */
 .footer-text-wrapper, h4 {
   font-size: 1.2rem !important;
   font-weight: bold;
@@ -108,14 +126,14 @@ div{
   text-decoration: underline;
 }
 
-
-
-.hq.contact, .navigation, .terms, .brands {
+/* Styles for contact, navigation, terms, and brands sections */
+.hq, .contact, .navigation, .terms, .brands {
   text-decoration: none;
   font-family: 'DMSans-Regular';
   font-size: 1.1rem;
 }
 
+/* Styles for the box and vector */
 .box {
   height: 1px;
   width: 1108px;
@@ -130,6 +148,7 @@ div{
   width: 1108px;
 }
 
+/* Styles for the label and terms-and-conditions */
 .label {
   height: 78px;
   width: 204px;
@@ -148,6 +167,7 @@ div{
   width: 204px;
 }
 
+/* Styles for the Elewa logo */
 .elewa-logo {
   background-image: url('view/images/elewa-logo.png');
   background-size: 100% 100%;
@@ -155,7 +175,8 @@ div{
   width: 250px;
 }
 
-.social-media{
+/* Styles for social media icons */
+.social-media {
   margin-right: 2rem;
   width: 30px;
   height: 30px;
@@ -164,9 +185,9 @@ div{
   display: flex;
 }
 
-.footer-imgs{
+/* Styles for the footer images container */
+.footer-imgs {
   padding: 1.5rem 5rem;
   position: relative;
   display: flex;
 }
-
