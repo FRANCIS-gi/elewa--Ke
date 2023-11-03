@@ -1,3 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --elewa-group-website-color-primary: #000000;
+  --elewa-group-website-color-white: #ffffff;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  text-decoration: none; /* Remove underlines from links */
+}
+
+div{
+  display: block;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +71,102 @@
     transform: rotate(360deg);
   }
 }
+
+.footer-label, .footer-label h4, .footer-text-wrapper, p, a, .contact, .navigation, .terms, .brands {
+ color: var(--elewa-group-website-color-white);
+ margin-left: 0;
+}
+
+.footer{
+  background-color: var(--elewa-group-website-color-primary);
+  padding-inline: 0.5rem;
+  padding-top: 3rem;
+  max-width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  color: var(--elewa-group-website-color-white);  
+  text-decoration-color: var(--elewa-group-website-color-white);
+}
+
+.footer-navigations{
+  margin-inline: 4rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--elewa-group-website-color-white);
+}
+
+.footer-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 1rem;
+}
+
+.footer-text-wrapper, h4 {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  font-family: 'Jeko-Medium';
+  text-decoration: underline;
+}
+
+
+
+.hq.contact, .navigation, .terms, .brands {
+  text-decoration: none;
+  font-family: 'DMSans-Regular';
+  font-size: 1.1rem;
+}
+
+.box {
+  height: 1px;
+  width: 1108px;
+}
+
+.box .vector {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 1108px;
+}
+
+.label {
+  height: 78px;
+  width: 204px;
+}
+
+.label .terms-and-conditions {
+  color: #ffffff;
+  font-family: "DM Sans-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  width: 204px;
+}
+
+.elewa-logo {
+  background-image: url('view/images/elewa-logo.png');
+  background-size: 100% 100%;
+  height: 39px;
+  width: 250px;
+}
+
+.social-media{
+  margin-right: 2rem;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  position: relative;
+  display: flex;
+}
+
+.footer-imgs{
+  padding: 1.5rem 5rem;
+  position: relative;
+  display: flex;
+}
+
