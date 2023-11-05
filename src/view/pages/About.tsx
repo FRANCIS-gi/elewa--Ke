@@ -1,15 +1,11 @@
 import React from "react";
 
 import '../../App.css';
-import {Header} from '../../components/shared/header'; // Import the Header 
-import {HomePage} from '../../components/shared/homePage'; // Import the HomePage 
-import {Footer} from '../../components/shared/footer'; // Import the Footer 
-import {Container} from '../../components/shared/container';
-
-import People from "../../assets/images/people.png"; // Import the People image
-import PeopleIcon from "../../assets/images/people icon.png";
-import Loop from "../../assets/images/loop.png";
-import Globe from "../../assets/images/globe.png"
+import { Header, HomePage, Footer, Container, Button, ButtonCircle } from '../../models/about/shared';
+import People from "../../assets/images/about/people.png"; // Import the People image
+import PeopleIcon from "../../assets/images/about/people icon.png";
+import { globe, loop } from '../../assets/images/about';
+import { Team } from "../../components/about/team";
 
 
 export const About = (): JSX.Element => {
@@ -38,7 +34,7 @@ export const About = (): JSX.Element => {
                     
                     <div className="icons">
                         <div  >
-                            <img className="about-icons" alt="Loop" src={Loop}/>
+                            <img className="about-icons" alt="Loop" src={loop}/>
                             <h3 className="about-h">Holistic solutions </h3>
                             <p className="about-p">We go beyond a simple patch-up but develop lasting solutions through holistic design.</p>
                         </div>
@@ -48,7 +44,7 @@ export const About = (): JSX.Element => {
                             <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
                         </div>
                         <div>
-                            <img className="about-icons" alt="Globe" src={Globe} />
+                            <img className="about-icons" alt="Globe" src={globe} />
                             <h3 className="about-h">Open data </h3>
                             <p className="about-p">Sharing is caring. We share what we learn. As proof, we've open-sourced all our internal projects.</p>
                         </div>
@@ -57,7 +53,14 @@ export const About = (): JSX.Element => {
 
             </Container>
             <Container>
+                <div></div>
                 
+                <nav></nav>
+                <Team/>
+                <div> 
+                    <Button/>
+                    <ButtonCircle/>
+                </div>                
             </Container>
             <Container>
                 
