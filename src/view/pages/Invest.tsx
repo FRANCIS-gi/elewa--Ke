@@ -3,19 +3,18 @@ import React from "react";
 import '../../App.css';
 import {Header} from '../../components/shared/header'; // Import the Header 
 import {HomePage} from '../../components/shared/homePage'; // Import the HomePage 
-import {Footer} from '../../components/shared/footer'; // Import the Footer 
+import {Footer} from '../../components/shared/footer'; // Import the Footer
+import {Container} from '../../components/shared/container'; 
 
 
-import Chain from '../../assets/images/Chain.png'; // Import the Chain image
-import {Container} from '../../components/shared/container';//import container component  
+import Field from "../../assets/images/Field.png"; // Import the People image
 
-export const SocialImpact = (): JSX.Element => {
+export const Invest = (): JSX.Element => {
     return (
         <div className="App">
             <Header /> {/* Render the Header component */}
-            <HomePage imgSrc={Chain} /> {/* Render the HomePage component with the 'imgSrc' prop set to the imported 'Chain' image */} 
-            
-            <Container>{/* different sections of webpages */}    
+            <HomePage imgSrc={Field} /> {/* Render the HomePage component with the 'imgSrc' prop set to the imported 'People' image */}
+            <Container>
 
             </Container>
             <Container>
@@ -32,7 +31,7 @@ export const SocialImpact = (): JSX.Element => {
             </Container>
             <Container>
                 
-            </Container>         
+            </Container>
             
             
             
