@@ -10,6 +10,9 @@ function App() {
   return (
     <div className="App">
       <About/>
+      {/*<SocialImpact/>  */}
+      {/*<Invest/>  */}
+
 
     </div>
     /*
