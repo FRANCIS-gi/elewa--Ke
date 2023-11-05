@@ -1,19 +1,39 @@
 import React from 'react';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './App.css';
-import { Footer } from './viewModel/components/footer';
-import { Header } from './viewModel/components/header';
-import { HomePage } from './viewModel/components/homePage';
-import People from "./view/images/people.png";
+import { About } from './view/pages/About';
+// import { SocialImpact } from './view/pages/SocialImpact';
+// import { Invest } from './view/pages/Invest';
 
 function App() {
   return (
-    <div className="App">      
-      <Header/> 
-      <HomePage imgSrc={People} />
-      <Footer/>
+    <div className="App">
+      <About/>
+
     </div>
+    /*
     
+      <Router>
+        <div className="App">
+          <ul>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/social-impact">Social Impact</Link>
+            </li>
+            <li>
+              <Link to="/invest">Invest</Link>
+            </li>
+          </ul>
+
+          <Route path="/about" element={<About />} />
+          <Route path="/social-impact" element={<SocialImpact />} />
+          <Route path="/invest" element={<Invest />} />
+        </div>
+      </Router>
+    */  
   );
 }
 
