@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"; 
+
 
 import '../../App.css';
 import { Header, HomePage, Footer, Container, Button, ButtonCircle } from '../../models/about/shared';
-import People from "../../assets/images/about/people.png"; // Import the People image
-import PeopleIcon from "../../assets/images/about/people icon.png";
-import { globe, loop } from '../../assets/images/about';
-import { Team } from "../../components/about/team";
-
+import '../styles/About.css';  
+import { globe, loop,peopleIcon,people } from '../../assets/images/about/aboutimages';
+import { Team } from "../../components/shared/About/team";
+import { Sections } from "../../components/shared/sections";
 
 export const About = (): JSX.Element => {
     return (
@@ -14,7 +14,7 @@ export const About = (): JSX.Element => {
             <Header /> {/* Render the Header component */}
             <HomePage >
                 
-                <img className="background-img" alt="People" src={People} /> {/* Render an image with the provided 'imgSrc' prop */}
+                <img className="background-img" alt="People" src={people} /> {/* Render an image with the provided 'imgSrc' prop */}
                 <div >    
                     <div className="homepage-group"> {/* Render a div with the class name 'homepage-group' */}
                         <h2 className="subtitle">HOW TO RECOGNIZE AN ELEWA MEMBER</h2> {/* Render a subtitle */}
@@ -39,7 +39,7 @@ export const About = (): JSX.Element => {
                             <p className="about-p">We go beyond a simple patch-up but develop lasting solutions through holistic design.</p>
                         </div>
                         <div>
-                            <img className="about-icons" alt="PeopleIcon" src={PeopleIcon}/>
+                            <img className="about-icons" alt="PeopleIcon" src={peopleIcon}/>
                             <h3 className="about-h" > Impact</h3>
                             <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
                         </div>
@@ -53,23 +53,102 @@ export const About = (): JSX.Element => {
 
             </Container>
             <Container>
-                <div></div>
-                
-                <nav></nav>
+                <div> </div>
                 <Team/>
                 <div> 
                     <Button/>
                     <ButtonCircle/>
                 </div>                
             </Container>
+
             <Container>
+                <div> 
+                    <h2> </h2>
+                    <p> <i></i></p>
+
+                    <div>
+                        <div>
+                            <img className="about-icons" alt="PeopleIcon" src={peopleIcon}/>
+                            <h3 className="about-h" > Impact</h3>
+                            <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
+                        </div>
+                        <div>
+                            <img className="about-icons" alt="PeopleIcon" src={peopleIcon}/>
+                            <h3 className="about-h" > Impact</h3>
+                            <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
+                        </div>
+                        <div>
+                            <img className="about-icons" alt="PeopleIcon" src={peopleIcon}/>
+                            <h3 className="about-h" > Impact</h3>
+                            <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
+                        </div>
+
+                        <div>
+                            <img className="about-icons" alt="PeopleIcon" src={peopleIcon}/>
+                            <h3 className="about-h" > Impact</h3>
+                            <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
+                        </div>
+
+                        <div>
+                            <img className="about-icons" alt="PeopleIcon" src={peopleIcon}/>
+                            <h3 className="about-h" > Impact</h3>
+                            <p className="about-p" >Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.</p>
+                        </div>
+                    </div>
+
+                </div>
                 
             </Container>
             <Container>
-                
+                <div>
+                    <div></div>
+                    <div>
+                        <h1> </h1>
+                        <p></p>
+                        <p></p>
+                        <Button></Button>
+                    </div>
+                </div>
             </Container>
-            <Container>
-                
+            <Container id="grey" >
+                <div>
+                    <div>
+                        <p></p>
+                        <div>
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div> 
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div> 
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>        
+
+                    </div>
+                </div>
+                <Button></Button>
+                <Sections id='grey' >
+                    <span > Learn more about </span>
+                     
+                    <span>
+                    {/* <Link to="https://elewa.ke/social-impact">Elewa's social impact.</Link>                         */}
+                    </span>
+                       
+                </Sections>
             </Container>
             <Container>
                 
@@ -77,6 +156,8 @@ export const About = (): JSX.Element => {
                       
                         
             <Footer /> {/* Render the Footer component */}
+        
         </div>
+
     );
 };

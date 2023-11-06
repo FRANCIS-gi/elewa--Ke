@@ -1,0 +1,19 @@
+
+.about-icons{
+    max-height: 90px;
+    width: auto;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.about-h{
+    font-family: var(--elewa-group-website-jeko-title);
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.about-p{
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-size-description);
+    font-size: 1.3rem;
+    max-width: 50ch;
+}

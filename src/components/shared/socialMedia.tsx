@@ -3,9 +3,9 @@ import React from "react";
 import '../../App.css'; // Importing App.css for styling
 
 // Importing images for social media icons
-import fb from "../../assets/images/fb.png";
-import ig from "../../assets/images/ig.png";
-import Linkedin from "../../assets/images/LinkedIn.png";
+import fb from "../../assets/images/social/fb.png";
+import ig from "../../assets/images/social/ig.png";
+import Linkedin from "../../assets/images/social/LinkedIn.png";
 
 // SocialMedia component for displaying social media icons with links
 export const SocialMedia = (): JSX.Element => {

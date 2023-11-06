@@ -4,9 +4,11 @@ import '../../App.css';
 import {Header} from '../../components/shared/header'; // Import the Header 
 import {HomePage} from '../../components/shared/homePage'; // Import the HomePage 
 import {Footer} from '../../components/shared/footer'; // Import the Footer 
+import { Button } from "../../components/shared/button";
+import { Sections} from "../../components/shared/sections"; 
 
 
-import Chain from '../../assets/images/Chain.png'; // Import the Chain image
+import Chain from '../../assets/images/homepage/Chain.png'; // Import the Chain image
 import {Container} from '../../components/shared/container';//import container component  
 
 export const SocialImpact = (): JSX.Element => {
@@ -40,9 +42,45 @@ export const SocialImpact = (): JSX.Element => {
             <Container>
                 
             </Container>
-            <Container>
-                
-            </Container>         
+            <Container id="grey" >
+                <div>
+                    <div>
+                        <p></p>
+                        <div>
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div> 
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div> 
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>        
+
+                    </div>
+                </div>
+                <Button></Button>
+                <Sections>
+                    <span > Become part of our mission </span>
+                     and
+                    <span>
+                        <a href="https://elewa.ke/social-impact" >join elewa.</a>                        
+                    </span>
+                </Sections>
+            </Container>        
             
             
             

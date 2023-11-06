@@ -4,7 +4,9 @@ import '../../App.css';
 import {Header} from '../../components/shared/header'; // Import the Header 
 import {HomePage} from '../../components/shared/homePage'; // Import the HomePage 
 import {Footer} from '../../components/shared/footer'; // Import the Footer
-import {Container} from '../../components/shared/container'; 
+import {Container} from '../../components/shared/container';
+import { Sections } from "../../components/shared/sections"; 
+import { Button } from "../../components/shared/button";
 
 
 import Field from "../../assets/images/Field.png"; // Import the Field image
@@ -39,8 +41,44 @@ export const Invest = (): JSX.Element => {
             <Container>
                 
             </Container>
-            <Container>
-                
+            <Container id="grey" >
+                <div>
+                    <div>
+                        <p></p>
+                        <div>
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div> 
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div> 
+                            <div>
+                                <div>
+                                    <p></p>
+                                    <h3> </h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>        
+
+                    </div>
+                </div>
+                <Button></Button>
+                <Sections>
+                    <span > Become part of our mission.</span>
+                    And start 
+                    <span>
+                        <a href="https://elewa.ke/social-impact" >investing.</a>                        
+                    </span>
+                </Sections>
             </Container>
             
             
