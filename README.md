@@ -70,7 +70,7 @@ The Elewa Group React.tsx App provides a user-friendly interface to access infor
 
 ## Support and Contributions
 
-We welcome contributions from the community. If you would like to contribute to the development of this app or report issues, please visit our GitHub repository at [https://github.com/elewa-group/react-app](https://github.com/elewa-group/react-app).
+We welcome contributions from the community. If you would like to contribute to the development of this app or report issues, please visit our GitHub repository at [https://github.com/elewa-group/react-app](https://github.com/FRANCIS-gi/elewa--Ke).
 
 ## Contact
 
